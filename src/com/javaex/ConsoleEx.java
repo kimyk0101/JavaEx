@@ -50,4 +50,5 @@ public class ConsoleEx {
 		
 		System.out.println("\\: 역슬래시");	//	\는 이스케이프 문자로 인식, \\를 역슬래시로 인식
 	}
+	//	Git 테스트를 위한 임시 주석
 }
