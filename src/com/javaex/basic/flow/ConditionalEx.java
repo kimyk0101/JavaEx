@@ -12,8 +12,8 @@ public class ConditionalEx {
 //		switchEx();
 //		switchEx2();
 //		switchPractice();
-		ifPractice02 ();
-		
+//		ifPractice02 ();
+		Practice01 ();
 	}
 	private static void ifEx() {
 		Scanner scanner = new Scanner(System.in);
@@ -225,11 +225,14 @@ public class ConditionalEx {
 			System.out.println("C등급");
 		} else if (score >= 60) {
 			System.out.println("D등급");
-		} else {
+		} else {	//	else에는 조건식을 붙이는게 아니라 다른 조건이 모두 해당되지 않을 경우~	
 			System.out.println("F등급");
 		}
 		scanner.close();
 	}
 	
+	private static void Practice01 () { //p.86
+		//	숫자가 3의 배수이면 배수입니다. 아니면 아닙니다.
+	}
 	
 }
