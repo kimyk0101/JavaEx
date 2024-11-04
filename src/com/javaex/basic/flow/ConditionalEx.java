@@ -231,8 +231,23 @@ public class ConditionalEx {
 		scanner.close();
 	}
 	
-	private static void Practice01 () { //p.86
-		//	숫자가 3의 배수이면 배수입니다. 아니면 아닙니다.
+	private static void Practice01 () { 
+		//	점수를 입력받아서 숫자가 3의 배수이면 3의 배수입니다. 아니면 3의 배수가 아닙니다.
+		Scanner scanner = new Scanner(System.in);
+		
+
+		System.out.println("점수를 입력하세요");
+		int score = scanner.nextInt();
+		
+		if (score % 3 == 0) {	
+			System.out.println("3의 배수입니다.");
+		} else {	
+			
+			System.out.println(score + "은 3의 배수가 아닙니다.");
+		}
+		
+		scanner.close();
+		
 	}
 	
 }
