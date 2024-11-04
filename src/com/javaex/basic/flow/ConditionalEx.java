@@ -8,7 +8,8 @@ public class ConditionalEx {
 	public static void main(String[] args) {
 //		ifEx();
 //		ifEx2();
-		ifPractice01();
+//		ifPractice01();
+		switchEx();
 	}
 	private static void ifEx() {
 		Scanner scanner = new Scanner(System.in);
@@ -93,6 +94,36 @@ public class ConditionalEx {
 			System.out.println("R404호 입니다.");
 		} else {
 			System.out.println("상담원에게 문의하세요");
+		}
+		scanner.close();
+	}
+	
+	private static void switchEx() {
+		// ifPractice01 -> switch ~ case 문으로
+		System.out.println("과목을 선택하세요.");
+		System.out.println("1.자바 2.C 3.C++ 4.파이썬");
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("과목 번호:");
+		int subj = scanner.nextInt();
+		
+		//	변수 값에 따른 조건 분기
+		switch (subj) {
+		case 1: //	subj == 1이면
+			System.out.println("R101호 입니다.");
+			break;	//	잊지말자 (break가 없으면 닫지 않고 다음코드로 내려가서 break나오기 전까지 계속해서 출력)
+		case 2: //	subj == 2이면
+			System.out.println("R202호 입니다.");
+			break;
+		case 3: //	subj == 3이면
+			System.out.println("R303호 입니다.");
+			break; 
+		case 4: //	subj == 4이면
+			System.out.println("R404호 입니다.");
+			break; 
+		default: //	else
+			System.out.println("상담원에게 문의하세요");
+			break;
 		}
 		scanner.close();
 	}
