@@ -12,3 +12,6 @@ public class HelloWorld {
 		System.out.println("Hello, Java!");
 	}
 }
+
+// github 연동 확인을 위한 주석
+
