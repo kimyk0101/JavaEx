@@ -33,8 +33,5 @@ public class IntLongEx {
 		System.out.println(oct);
 		System.out.println(hex);
 		
-		
-		
-		
 	}
 }

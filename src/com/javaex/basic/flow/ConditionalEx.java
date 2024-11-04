@@ -69,6 +69,16 @@ public class ConditionalEx {
 		//	3 -> R303호 입니다.
 		//	4 -> R404호 입니다.
 		//	나머지 -> 상담원에게 문의하세요.
+		
+		//	선생님이 쓰신 것
+/*		System.out.println("과목을 선택하세요.");
+ * 		System.out.println("1.자바 2.C 3.C++ 4.파이썬");
+ * 		
+ * 		Scanner scanner = new Scanner(System.in);
+ * 		System.out.print("과목번호:");
+ * 		int subj = scanner.nextln();
+ */
+		//	내가 한 것
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("과목을 선택하세요\n(1.자바 2.C 3.C++ 4.파이썬)\n과목번호:");
 		int code = scanner.nextInt();
