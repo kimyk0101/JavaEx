@@ -6,8 +6,10 @@ public class FlowControllEx {
 	public static void main(String[] args) {
 //		continueEx();
 //		breakEx();
-//		forPractice01();
-		forPractice02();
+		forPractice01();
+//		whilePractice01();
+//		forPractice02();
+		
 		
 	}
 
@@ -40,14 +42,27 @@ public class FlowControllEx {
 	
 	
 	private static void forPractice01() {
-		//	구구단 1 ~ 9단까지 출력
+		//	구구단 1 ~ 9단까지 출력 - for문 사용
 		
-		for (int i = 2; i <= 9; ++i) {	
-			for (int num = 1; num <= 9; ++num) {
+		for (int i = 2; i < 10; ++i) {	
+			for (int num = 1; num < 10; ++num) {
 				System.out.println(i + " * " + num + " = " + (i * num));}
 		}
 	}
 		
+	private static void whilePractice01() {
+		//	구구단 1 ~ 9단까지 출력 - while문 사용
+		int num = 2;
+		while (num < 10) {
+			int i = 1;
+			while (i < 10) {
+				System.out.println(num + "*" + i + "=" + i*num);
+				i++;
+			}
+			System.out.println();
+			num++;
+		}
+	}
 	private static void forPractice02() {
 		//	순서대로 늘어나는 별 출력
 		
