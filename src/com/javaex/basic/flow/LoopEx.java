@@ -108,7 +108,7 @@ public class LoopEx {
 		while (i < 6) {
 			System.out.print((int)(Math.random() * 45) + 1);
 			System.out.print("\t");
-			++i;
+			++i;	
 		}
 	}
 	
