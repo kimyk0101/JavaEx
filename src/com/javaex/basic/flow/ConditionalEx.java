@@ -187,7 +187,7 @@ public class ConditionalEx {
 			action = "휴식";
 			break;
 		case "MONDAY":
-		case "TUSEDAY":
+		case "TUESDAY":
 		case "WEDNESDAY":
 		case "THURSDAY":
 			action = "열공";
