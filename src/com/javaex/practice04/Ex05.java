@@ -13,10 +13,9 @@ public class Ex05 {
 		int num[] = new int[5];
 		Scanner scanner = new Scanner(System.in);
 		int sum = 0;
-		int j = scanner.nextInt();
 		for (int i = 0; i < num.length; ++i) {
 			scanner.nextInt();
-			sum += j;
+			
 		}	
 		System.out.println("평균은" + sum + "입니다.");
 		scanner.close();
