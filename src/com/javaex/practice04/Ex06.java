@@ -8,7 +8,7 @@ public class Ex06 {
 		
 		for (char i = 0; i < c.length; ++i) {
 			if (c[i] == ' ') {
-				System.out.print(',');
+				c[i] = ',';
 			}
 			System.out.print(c[i]);
 		}

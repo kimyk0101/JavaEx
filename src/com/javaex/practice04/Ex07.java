@@ -28,6 +28,6 @@ public class Ex07 {
 			System.out.println(wonArray[i] + "원: " + j + "개");
 			money -= wonArray[i]*j;
 		}
-		
-	}
+		scanner.close();
+	} 	
 }
