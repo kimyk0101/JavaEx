@@ -14,8 +14,8 @@ public class Ex04 {
 				sum += data[i]; // sum = sum + data[i]
 			}
 		}
-		System.out.println(num);
-		System.out.println(sum);
+		System.out.println("주어진 배열에서 3의 배수의 개수=>" + num);
+		System.out.println("주어진 배열에서 3의 배수의 합=>" + sum);
 
 	}
 }
