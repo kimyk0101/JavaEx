@@ -3,6 +3,7 @@ package com.javaex.practice04;
 public class Ex04 {
 
 	public static void main(String[] args) {
+		//	주어진 배열 데이터를 이용하여 3의 배수의 개수와 배수의 합을 출력하는 프로그램을 작성하세요.
 		int[] data = { 1, 3, 5, 8, 9, 11, 15, 19, 18, 20, 30, 33, 31 };
 		// 3의 배수의 개수 구하기
 		// 3의 배수의 합 구하기

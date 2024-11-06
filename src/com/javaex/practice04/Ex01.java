@@ -3,6 +3,7 @@ package com.javaex.practice04;
 public class Ex01 {
 
 	public static void main(String[] args) {
+		//	코드 수정하기
 		
 		int[] intArray = new int[5];
 		intArray[0] = 3;

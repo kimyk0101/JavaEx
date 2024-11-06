@@ -10,6 +10,7 @@ public class Ex05 {
 	}
 
 	private static void averEx() {	
+		//	5개의 숫자를 키보드로 입력 받아 평균을 구하는 프로그램을 작성하세요.
 		Scanner scanner = new Scanner(System.in);
 		int num[] = new int[5];
 		
