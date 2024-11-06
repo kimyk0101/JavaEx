@@ -9,15 +9,19 @@ public class Ex05 {
 
 	}
 
-	private static void averEx() {
-		int num[] = new int[5];
+	private static void averEx() {	
 		Scanner scanner = new Scanner(System.in);
+		int num[] = new int[5];
+		
 		int sum = 0;
+		float avr = 0;
 		for (int i = 0; i < num.length; ++i) {
-			scanner.nextInt();
-			
+			num[i] = scanner.nextInt();
+			sum += num[i];
+					
 		}	
-		System.out.println("평균은" + sum + "입니다.");
+		avr = sum / num.length;
+		System.out.println("평균은 " + avr + " 입니다.");
 		scanner.close();
 	}
 
