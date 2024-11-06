@@ -10,13 +10,13 @@ public class Ex05 {
 	}
 
 	private static void averEx() {
+		int num[] = new int[5];
 		Scanner scanner = new Scanner(System.in);
-		int num = scanner.nextInt();
 		int sum = 0;
-
-		for (int i = 1; i < 5; ++i) {
-			num = scanner.nextInt();
-			sum += num;
+		int j = scanner.nextInt();
+		for (int i = 0; i < num.length; ++i) {
+			scanner.nextInt();
+			sum += j;
 		}	
 		System.out.println("평균은" + sum + "입니다.");
 		scanner.close();
