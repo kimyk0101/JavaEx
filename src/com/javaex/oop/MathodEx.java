@@ -26,8 +26,16 @@ public class MathodEx {
 		
 		//	방법2 : 가변인수 사용
 		System.out.println("getSumVar:" + getSumVar(1, 2, 3, 4, 5, 6, 7, 8));
+		
+		//	일반 매개변수와 가변 매개변수를함께 사용할 때
+		//	일반 매개변수 먼저, 가변 매개변수 나중에 선언
+		printSum("합산값", 1, 2, 3, 4, 5, 6, 7, 8);
 	}
-
+	
+	private static void printSum(String message, double ... values) {
+		System.out.println(message + ":" + getSumVar(values));
+	}
+	
 	private static double getSumArr(double[] values) {
 		double total = 0;
 		
