@@ -1,11 +1,21 @@
-//11.07-3
-package com.javaex.oop.point.v1;
+//11.07-5
+package com.javaex.oop.point.v2;
 
+//	v2
 class Point {
 	//	필드
 	private int x;
 	private int y;
 	
+	//	기본 생성자
+	public Point() {
+	}
+	
+	public Point(int x, int y) {
+		//	초기화
+		this.x = x;
+		this.y = y;
+	}
 	//	Getters/Setters
 	public int getX() {
 		return x;
