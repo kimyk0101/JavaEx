@@ -13,7 +13,7 @@ public class GoodsApp {
 
 	public static void main(String[] args) {
 		Goods camera = new Goods();
-		//	생성자를 호출 -> 인스턴스 생성 -> camera로 참조
+		//	생성자를 호출 -> 인스턴스 생성 -> camera 참조
 		
 		camera.name = "Nikon";
 		camera.price = 400_000;

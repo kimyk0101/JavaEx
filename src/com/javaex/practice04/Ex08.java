@@ -10,8 +10,9 @@ public class Ex08 {
 		while (i < 6) {
 			System.out.print((int)(Math.random() * 45) + 1);
 			System.out.print("\t");
+			//	앞의 방들과 비교해서 같으면 한 번 더 돌리기
 			if (j[i] == j[i]) {
-				j[i] = (int)(Math.random() * 45) + 1);
+				j[i] = (int)(Math.random() * 45) + 1;
 			}
 			++i;
 		}		
