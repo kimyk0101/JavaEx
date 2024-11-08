@@ -1,4 +1,4 @@
-//11.08-16
+//11.08-6
 package com.javaex.oop.shape.v2;
 
 public class Rectangle extends Shape implements Drawable {

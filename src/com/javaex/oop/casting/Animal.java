@@ -1,4 +1,4 @@
-//11.08-6
+//11.08-4
 package com.javaex.oop.casting;
 
 public class Animal {

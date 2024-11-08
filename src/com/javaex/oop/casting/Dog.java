@@ -1,4 +1,4 @@
-//11.08-7
+//11.08-4
 package com.javaex.oop.casting;
 
 public class Dog extends Animal {
@@ -9,3 +9,4 @@ public class Dog extends Animal {
 		 System.out.println(name + ": 멍멍!");
 	 }
 }
+
