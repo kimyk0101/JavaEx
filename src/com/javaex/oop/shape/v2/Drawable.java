@@ -1,0 +1,9 @@
+//11.08-15
+package com.javaex.oop.shape.v2;
+
+//	인터페이스는 추상 메서드만 가진다
+//	abstract는 명시하지 않는다
+public interface Drawable {
+	public void draw();
+	
+}
