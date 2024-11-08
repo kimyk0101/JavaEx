@@ -88,7 +88,7 @@ class ColorPoint extends Point {
 		System.out.printf("색상점[x=%d, y=%d, color=%s]를 그렸습니다.%n", x, y, color);
 	}
 
-	@Override
+	@Override	//	컴파일러한테 체크해달라고 지시
 	public void draw(boolean bShow) {
 		String message = String.format("색상점[x=%d, y=%d, color=%s]를 ", x, y, color);
 		message += bShow ? "그렸습니다." : "지웠습니다.";
