@@ -6,10 +6,30 @@ import java.util.Scanner;
 public class ExceptionHandlingEx {
 
 	public static void main(String[] args) {
-		arithExceptionEx();
+//		arithExceptionEx();
+		arrayExceptionEx();
+		nullPointerExceptionEx();
 
 	}
 
+	private static void arrayExceptionEx() {
+		int[] intArray = new int[] { 3, 6, 9 };
+		
+		try {
+			System.out.println(intArray[3]);
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.err.println("Error:" + e.getMessage());
+		}
+	}
+	
+	private static void nullPointerExceptionEx() {
+		String str = new String("Hello Java");
+		try {
+			str = null;	//	참조 끊음
+			System.out.println(str.toUpperCase());	//	모두 대문자로
+		} catch (NullPointerException e) {
+			System.err.println("널입니다.");
+		}
 	private static void arithExceptionEx() {
 		//	스캐너에서 정수 입력
 		//	100을 정수로 나눈 값을 출력
