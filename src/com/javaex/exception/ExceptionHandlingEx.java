@@ -30,6 +30,7 @@ public class ExceptionHandlingEx {
 		} catch (NullPointerException e) {
 			System.err.println("널입니다.");
 		}
+	}
 	private static void arithExceptionEx() {
 		//	스캐너에서 정수 입력
 		//	100을 정수로 나눈 값을 출력
