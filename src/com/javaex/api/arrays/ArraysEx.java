@@ -7,7 +7,7 @@ public class ArraysEx {
 
 	public static void main(String[] args) {
 		//	배열의 복사
-//		arrayCopyEx();
+		arrayCopyEx();
 		//	얕은 비교
 		equalsEx();
 
