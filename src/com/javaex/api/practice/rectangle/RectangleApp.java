@@ -10,7 +10,7 @@ public class RectangleApp {
 		Rectangle c = new Rectangle(3, 3);
 		Rectangle d = c;
 
-		System.out.println(a.equals(b));	//	true
+		System.out.println(a.equals(b));	//	true 가 나오려면?
 		System.out.println(a.equals(c));	//	false
 		System.out.println(a.equals(d));	//	false
 		System.out.println(d.equals(c));	//	true
