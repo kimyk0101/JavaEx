@@ -30,7 +30,7 @@ public class ArraysSearch {
 	}
 		
 		private static void customSearch() {
-			 //	사용자 정의 클래스의 소팅
+			
 			Member m1 = new Member("홍길동");
 			Member m2 = new Member("고길동");
 			Member m3 = new Member("장길산");

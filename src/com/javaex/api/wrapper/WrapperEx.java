@@ -9,7 +9,7 @@ public class WrapperEx {
 		Integer i = new Integer(10);
 		Character c = new Character('c');
 		
-		//	정상적인 생성법
+		//	정상적인 생성법 .valueOf
 		Float f = Float.valueOf(3.14156f);
 		Boolean b = Boolean.valueOf(true);
 		
