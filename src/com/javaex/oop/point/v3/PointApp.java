@@ -1,4 +1,4 @@
-//11.07-7
+//11.07
 package com.javaex.oop.point.v3;
 
 //	v3. 메소드 오버로딩

@@ -1,4 +1,4 @@
-//11.11-6,7
+//11.11
 package com.javaex.api.stringclass;
 
 import java.util.Arrays;

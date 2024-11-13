@@ -1,4 +1,4 @@
-//11.06-4, 11.07-2
+//11.06, 11.07
 package com.javaex.oop.goods.v2;
 
 //	Goods v2. 접근제한자

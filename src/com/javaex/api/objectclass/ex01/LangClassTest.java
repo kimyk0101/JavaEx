@@ -1,4 +1,4 @@
-//11.11-2
+//11.11
 package com.javaex.api.objectclass.ex01;
 
 public class LangClassTest {

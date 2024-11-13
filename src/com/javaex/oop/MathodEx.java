@@ -1,4 +1,4 @@
-//11.06-5, 11.07-1
+//11.06, 11.07
 package com.javaex.oop;
 
 public class MathodEx {

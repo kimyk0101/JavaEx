@@ -1,4 +1,4 @@
-//10.31-1
+//10.31
 package com.javaex.basic.types;
 
 //	논리형 (1바이트) - true or false

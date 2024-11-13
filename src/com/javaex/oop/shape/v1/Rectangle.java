@@ -1,4 +1,4 @@
-//11.08-5
+//11.08
 package com.javaex.oop.shape.v1;
 
 public class Rectangle extends Shape {

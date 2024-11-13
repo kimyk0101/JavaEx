@@ -1,4 +1,4 @@
-//10.31-2
+//10.31
 package com.javaex.basic.types;
 
 //	Casting (형변환)

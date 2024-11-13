@@ -1,4 +1,4 @@
-//11.07-3
+//11.07
 package com.javaex.oop.point.v1;
 
 class Point {

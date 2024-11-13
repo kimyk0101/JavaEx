@@ -1,4 +1,4 @@
-//11.07-5
+//11.07
 package com.javaex.oop.point.v2;
 
 //	v2

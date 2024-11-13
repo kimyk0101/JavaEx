@@ -1,4 +1,4 @@
-//11.07-9
+//11.07
 package com.javaex.oop.staticmember;
 
 public class StaticExApp {

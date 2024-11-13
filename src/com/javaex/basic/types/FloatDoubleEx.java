@@ -1,4 +1,4 @@
-//10.30-4
+//10.30
 package com.javaex.basic.types;
 
 //	float (4바이트 실수) < double (8바이트 실수)

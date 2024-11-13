@@ -1,4 +1,4 @@
-//11.08-3
+//11.08
 package com.javaex.oop.person;
 
 public class Student extends Person{	//	Person에게 상속받음

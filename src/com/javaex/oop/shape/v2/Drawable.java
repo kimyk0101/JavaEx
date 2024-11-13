@@ -1,4 +1,4 @@
-//11.08-6
+//11.08
 package com.javaex.oop.shape.v2;
 
 //	인터페이스는 추상 메서드만 가진다

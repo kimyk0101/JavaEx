@@ -1,4 +1,4 @@
-//10.31-6
+//10.31
 package com.javaex.basic.opers;
 
 //	비교 연산과 논리 연산

@@ -1,4 +1,4 @@
-//11.12-4
+//11.12
 package com.javaex.api.generic;
 
 //	Integer만 담을 수 있는 상자

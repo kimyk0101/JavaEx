@@ -1,4 +1,4 @@
-//11.08-5
+//11.08
 package com.javaex.oop.shape.v1;
 
 //	구체적 도형들의 공통점을 추출한 추상 클래스

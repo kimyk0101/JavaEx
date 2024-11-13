@@ -1,4 +1,4 @@
-//11.08-2
+//11.08
 package com.javaex.oop.point.v4;
 
 //	v4. 상속

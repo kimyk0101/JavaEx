@@ -1,4 +1,4 @@
-//11.12-6
+//11.12
 package com.javaex.collection.list;
 
 import java.util.ArrayList;

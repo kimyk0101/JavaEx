@@ -1,4 +1,4 @@
-//10.31-3
+//10.31
 package com.javaex.basic.types;
 
 //	char (2byte) : 문자의 유니코드 값은 실제로는 부호 없는 정수

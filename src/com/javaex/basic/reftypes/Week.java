@@ -1,4 +1,4 @@
-//11.05-3 new-enum
+//11.05 new-enum
 package com.javaex.basic.reftypes;
 
 public enum Week {

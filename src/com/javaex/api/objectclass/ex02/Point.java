@@ -1,4 +1,4 @@
-//11.11-3
+//11.11
 package com.javaex.api.objectclass.ex02;
 //	object ex01
 public class Point {

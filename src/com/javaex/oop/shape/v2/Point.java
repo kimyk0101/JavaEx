@@ -1,4 +1,4 @@
-//11.08-6
+//11.08
 package com.javaex.oop.shape.v2;
 
 public class Point implements Drawable{

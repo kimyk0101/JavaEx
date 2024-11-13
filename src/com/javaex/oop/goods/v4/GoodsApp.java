@@ -1,4 +1,4 @@
-//11.07-6
+//11.07
 package com.javaex.oop.goods.v4;
 
 //	Goods v4. this

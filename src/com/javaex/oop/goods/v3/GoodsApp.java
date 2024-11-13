@@ -1,4 +1,4 @@
-//11.07-4
+//11.07
 package com.javaex.oop.goods.v3;
 
 //	Goods v3. 생성자

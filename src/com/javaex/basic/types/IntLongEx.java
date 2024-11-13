@@ -1,4 +1,4 @@
-//10.30-3
+//10.30
 package com.javaex.basic.types;
 
 //	정수형 데이터 타입

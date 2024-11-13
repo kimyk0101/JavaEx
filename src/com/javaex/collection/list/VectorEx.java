@@ -1,4 +1,4 @@
-//11.12-5
+//11.12
 package com.javaex.collection.list;
 
 import java.util.Vector;

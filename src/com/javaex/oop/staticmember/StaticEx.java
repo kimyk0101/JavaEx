@@ -1,4 +1,4 @@
-//11.07-8
+//11.07
 package com.javaex.oop.staticmember;
 
 //	static, instance, local

@@ -1,4 +1,4 @@
-//10.30-2
+//10.30
 package com.javaex.basic.types;
 
 /*변수의 선언과 할당 */

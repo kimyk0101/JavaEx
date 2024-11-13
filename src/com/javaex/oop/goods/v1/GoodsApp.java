@@ -1,4 +1,4 @@
-//11.06-3
+//11.06
 package com.javaex.oop.goods.v1;
 
 //	Goods v1. 필드

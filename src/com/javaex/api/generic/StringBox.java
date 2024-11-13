@@ -1,4 +1,4 @@
-//11.12-4
+//11.12
 package com.javaex.api.generic;
 
 //	String 객체를 담을 수 있는 Box를 설계
