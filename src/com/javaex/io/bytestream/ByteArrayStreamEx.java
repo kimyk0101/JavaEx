@@ -29,7 +29,7 @@ public class ByteArrayStreamEx {
 				bos.write(data);
 			}
 			
-			outSrc = ((ByteArrayOutputStream)bos).toByteArray();	//	다운캐스팅 후 배열로 변화 작업 수행
+			outSrc = ((ByteArrayOutputStream)bos).toByteArray();	//	다운캐스팅 후 배열로 변환 작업 수행
 			System.out.println(Arrays.toString(outSrc));
 		} catch (IOException e) {	//	어떤 예외가 남아있는지 확인
 			e.printStackTrace();	
