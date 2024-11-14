@@ -17,7 +17,7 @@ public class DataStreamEx {
 	static final String filename = rootPath + "primitives.txt";
 	
 	public static void main(String[] args) {
-//		writePrimitives();
+		writePrimitives();
 		readPrimitives();
 
 	}
