@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+//	byte 통째로 복사
 public class BufferedStreamEx {
 	//	프로젝트 내의 files 디렉터리 위치
 	static final String rootPath = System.getProperty("user.dir") + "\\files\\files\\";
