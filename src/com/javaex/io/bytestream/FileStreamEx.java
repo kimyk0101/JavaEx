@@ -36,7 +36,7 @@ public class FileStreamEx {
 		} catch (FileNotFoundException e) {
 			System.out.println("파일을 찾으 수없어요.");
 		} catch (IOException e) {
-			e.printStackTrace();
+			e.printStackTrace();	//	에러 설명해주는 메서드
 		} finally {	//	성공 실패와 관계없이 일단 실행
 /*			try {	//	is.close와 os.close는 반드시 체크해줘야 하는 checked Exception임
 				if (is != null) is.close();	//	함부로 닫으면 위험하기 때문에 에러가 남
