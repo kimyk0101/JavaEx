@@ -14,8 +14,7 @@ public class Ex08 {
 		System.out.print("몸무게: ");
 		int kg = scanner.nextInt();
 		
-		double BMI = 0;
-		BMI = kg/(Math.pow(m, 2));
+		double BMI = kg/(Math.pow(m, 2));
 		
 		if (18.5 <= BMI && BMI <= 24.9) {
 			System.out.println("정상체중입니다.");
