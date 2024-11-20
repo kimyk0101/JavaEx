@@ -6,9 +6,9 @@ public class FlowControllEx {
 	public static void main(String[] args) {
 //		continueEx();
 //		breakEx();
-		forPractice01();
+//		forPractice01();
 //		whilePractice01();
-//		forPractice02();
+		forPractice02();
 		
 		
 	}
