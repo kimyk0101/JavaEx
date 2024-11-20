@@ -15,13 +15,13 @@ public class Ex07 {
 		while(x <= num) {
 			while(y < x) {
 				++y;
-				System.out.print(y);
+				for(int z = 2; z <= y; ++z) {
+					System.out.print(y);
+					}
 				}
 			System.out.println(y);
 			++x;
-		}
-		
-		
+		}	
 		scanner.close();
 	}
 }
