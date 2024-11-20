@@ -9,12 +9,13 @@ public class Ex08 {
 		
 		System.out.println("키와 몸무게를 입력해 주십시오.");
 		System.out.print("키: ");
-		int m = scanner.nextInt()/100;
+		float m = scanner.nextInt()/100f;
 		
 		System.out.print("몸무게: ");
-		int kg = scanner.nextInt();
+		float kg = scanner.nextInt();
 		
-		double BMI = kg/(Math.pow(m, 2));
+//		double BMI = kg / (Math.pow(m, 2));
+		double BMI = kg / (m * m);
 		
 		if (18.5 <= BMI && BMI <= 24.9) {
 			System.out.println("정상체중입니다.");
