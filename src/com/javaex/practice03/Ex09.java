@@ -3,14 +3,13 @@ package com.javaex.practice03;
 public class Ex09 {
 
 	public static void main(String[] args) {
-		
-		int num = 1;
-		for (int i = 1; i < 10; ++i) {
-			for (num = 1; num <= 10; ++num) {
-				System.out.print(num + "\t");
+
+		for(int i = 1; i <= 10; i++) {
+			for(int j = i; j < 10+i; j++) {
+				System.out.print(j+ "\t");
+				
 			}
-			++num;
-			System.out.println();
+			System.out.println();	
 		}
 	}
 }
