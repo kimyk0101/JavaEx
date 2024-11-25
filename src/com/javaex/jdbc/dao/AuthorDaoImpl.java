@@ -85,9 +85,9 @@ public class AuthorDaoImpl implements AuthorDao {
 					" VALUES(?, ?)";
 			pstmt = conn.prepareStatement(sql);
 			
-			pstmt.setString(1, vo.getAuthorName());
-			pstmt.setString(2, vo.getAuthorDesc());
-			
+			pstmt.setString(2, vo.getAuthorName());
+			pstmt.setString(3, vo.getAuthorDesc());
+
 			insertedCount = pstmt.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();

@@ -1,6 +1,7 @@
 //11.25
 package com.javaex.jdbc.dao;
 
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
@@ -9,8 +10,8 @@ public class DaoApp {
 
 	public static void main(String[] args) {
 		listAuthors();
-//		insertAuthor();
-		deleteAuthor();
+		insertAuthor();
+//		deleteAuthor();
 		listAuthors();
 	}
 
@@ -34,8 +35,9 @@ public class DaoApp {
 	//	스캐너에서 정보 입력받아 테이블에 넣는 로직
 	private static void insertAuthor() {
 		Scanner scanner = new Scanner(System.in);
+
 		System.out.print("이름:");
-		String name =scanner.nextLine();
+		String name = scanner.nextLine();
 		System.out.print("정보:");
 		String desc = scanner.nextLine();
 		
