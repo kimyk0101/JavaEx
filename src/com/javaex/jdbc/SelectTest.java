@@ -26,7 +26,7 @@ public class SelectTest {
 //			System.out.println("연결 성공!");	
 			
 			stmt = conn.createStatement();	//	쿼리 수행 객체
-			String sql = "SELECT department_id, department_name " + "FROM departments";
+			String sql = "SELECT department_id, department_name " + "FROM departments";	//	name 뒤에 띄워쓰기 안하면 문장이 붙어버림
 			
 			rs = stmt.executeQuery(sql);	//	-> Cursor
 			
@@ -38,8 +38,10 @@ public class SelectTest {
 			}
 		} catch (ClassNotFoundException e) {
 			System.out.println("드라이버를 찾지 못했습니다!");
+			e.printStackTrace();
 		} catch (SQLException e) {
 			System.err.println("SQLError!");
+			e.printStackTrace();
 		} finally {
 			try {
 				if (conn != null) conn.close();
