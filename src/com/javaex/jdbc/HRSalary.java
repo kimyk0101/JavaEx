@@ -8,8 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-
-public class HRSearchEmployeesPstmt {
+public class HRSalary {
 
 	static final String dburl = "jdbc:mysql://localhost:3306/hrdb";
 	static final String dbuser = "hrdb";		
@@ -27,26 +26,21 @@ public class HRSearchEmployeesPstmt {
 			conn = DriverManager.getConnection(dburl, dbuser, dbpass);
 			
 			System.out.print("검색어 입력:");
-			String keyword = scanner.next();
+			String salary = scanner.next();
 			
-			//	실행 계획 수립
-			String sql = "SELECT CONCAT(first_name, ' ', last_name) full_name, " +
-					" email, phone_number, hire_date FROM employees " +
-					" WHERE UPPER(first_name) LIKE ? OR " +
-					" UPPER(last_name) LIKE ?";
-			//	데이터 바인딩 위치를 ?로 설정, 동적으로 데이터를 연결시킴
+			String sql = "SELECT MIN(salary), MAX(salary), employee_id " + 
+					"FROM employees GROUP BY employee_id, salary " +
+					"HAVING salary >= (SELECT MIN(salary) FROM employees) " +
+					"AND salary <= (SELECT MAX(salary) FROM employees)ORDER BY salary"; 
+			
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, "%" + keyword.toUpperCase() + "%");
-			pstmt.setString(2, "%" + keyword.toUpperCase() + "%");
-			
-			rs = pstmt.executeQuery();	//	쿼리 수행
+			rs = pstmt.executeQuery();
 			
 			while (rs.next()) {
-				System.out.printf("%s: %s, %s, %s%n",
-						rs.getString("full_name"), 
-						rs.getString("email"), 
-						rs.getString(3), 
-						rs.getString(4));
+				System.out.printf("%s, %s, %s%n", 
+						rs.getString(1), 
+						rs.getString(2), 
+						rs.getString(3)); 
 			}
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
@@ -62,5 +56,7 @@ public class HRSearchEmployeesPstmt {
 			}
 		}
 		scanner.close();
+
 	}
+
 }
