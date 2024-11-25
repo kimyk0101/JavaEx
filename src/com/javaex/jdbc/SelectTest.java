@@ -9,7 +9,7 @@ import java.sql.Statement;
 public class SelectTest {
 	
 	//	프로토콜://위치:port 번호/스키마
-	static final String dburl = "jdbc:mysql://localhost:3306/hrdb";
+	static final String dburl = "jdbc:mysql://localhost:3306/hrdb";	//	오타주의
 	static final String dbuser = "hrdb";		
 	static final String dbpass = "hrdb";
 	
