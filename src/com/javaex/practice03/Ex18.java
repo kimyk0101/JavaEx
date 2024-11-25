@@ -2,7 +2,7 @@ package com.javaex.practice03;
 
 import java.util.Scanner;
 
-public class Ex17 {
+public class Ex18 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -16,6 +16,12 @@ public class Ex17 {
 			}
 			System.out.println();
 			}
+		for(int k = 2; k <= num; k++) {
+			for(int h = 1; h <= k; h++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
 		scanner.close();
 	}
 }
