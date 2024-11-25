@@ -1,3 +1,4 @@
+//11.25
 package com.javaex.jdbc;
 
 import java.sql.Connection;
@@ -58,8 +59,10 @@ public class HRSearchEmployees {
 				if (stmt != null) stmt.close();
 				if (conn != null) conn.close();
 			} catch (Exception e) {
+				
 			}
 		}
+		scanner.close();
 	}
 
 }
