@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class HRSalary {
+public class HRSalaryPstmt {
 
 	static final String dburl = "jdbc:mysql://localhost:3306/hrdb";
 	static final String dbuser = "hrdb";		
@@ -25,22 +25,26 @@ public class HRSalary {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			conn = DriverManager.getConnection(dburl, dbuser, dbpass);
 			
-			System.out.print("검색어 입력:");
-			String salary = scanner.next();
+			String input = scanner.nextLine();
+			String[] tokens = input.split(" ");
 			
-			String sql = "SELECT MIN(salary), MAX(salary), employee_id " + 
-					"FROM employees GROUP BY employee_id, salary " +
-					"HAVING salary >= (SELECT MIN(salary) FROM employees) " +
-					"AND salary <= (SELECT MAX(salary) FROM employees)ORDER BY salary"; 
+			int minSalary = Integer.parseInt(tokens[0]);
+			int maxSalary = Integer.parseInt(tokens[1]);
+
+			
+			String sql = "SELECT CONCAT(first_name,' ', last_name) full_name, salary " + 
+					"FROM employees " +
+					"WHERE salary BETWEEN ? AND ? ORDER BY salary"; 
 			
 			pstmt = conn.prepareStatement(sql);
+			
+			pstmt.setInt(1, minSalary);
+			pstmt.setInt(2, maxSalary);
+
 			rs = pstmt.executeQuery();
 			
 			while (rs.next()) {
-				System.out.printf("%s, %s, %s%n", 
-						rs.getString(1), 
-						rs.getString(2), 
-						rs.getString(3)); 
+				System.out.printf("%s\t%d%n", rs.getString(1), rs.getInt(2)); 
 			}
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
