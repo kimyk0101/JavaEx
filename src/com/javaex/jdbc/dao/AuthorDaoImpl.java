@@ -14,7 +14,7 @@ import java.util.List;
 public class AuthorDaoImpl implements AuthorDao {
 	static final String dburl = "jdbc:mysql://localhost:3306/test_db";
 	static final String dbuser = "testuser";		
-	static final String dbpass = "test";
+	static final String dbpass = "test"; 
 	
 	private Connection getConnection() throws SQLException {
 		Connection conn = null;
