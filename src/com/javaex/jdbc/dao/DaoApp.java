@@ -9,10 +9,10 @@ import java.util.Scanner;
 public class DaoApp {
 
 	public static void main(String[] args) {
-		listAuthors();
+//		listAuthors();
 		insertAuthor();
 //		deleteAuthor();
-		listAuthors();
+//		listAuthors();
 	}
 
 	//	Author Table의 모든 레코드를 출력
